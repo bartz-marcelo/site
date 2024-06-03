@@ -1,0 +1,56 @@
+body{
+    font-family: "Manrope" ;
+    background-color: black ;
+
+} 
+
+.nome { 
+   margin: 0 auto;      
+   width: 800px;
+   height: auto; 
+}
+
+.nome .logo{
+    width: 900px;
+}
+
+.p1{
+    text-align: justify;
+    margin-left: 150px;
+    margin-right: 150px;  
+    color: white;
+    font-size: 20px;  
+}
+
+.p2{
+    text-align: justify;
+    margin-left: 150px;
+    margin-right: 150px;  
+    color: white;
+    font-size: 20px; 
+}
+
+.lista1{
+    color: white;
+    text-align: justify;
+    margin-left: 150px;
+    margin-right: 150px;  
+    color: white;
+    font-size: 20px; 
+}
+
+.fc {
+
+    border: 2px solid white;     
+    font-size: 20px;
+    color: white; 
+    background-color: black;
+    padding: 20px;
+    margin-left: 150px; 
+    width: 300px; 
+  }
+  
+  
+
+
+
