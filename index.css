@@ -1,4 +1,5 @@
 body{
+    display: flex;
     font-family: "Manrope" ;
     background-color: black ;
 
@@ -11,10 +12,12 @@ body{
 }
 
 .nome .logo{
+    display: flex;
     width: 900px;
 }
 
 .p1{
+    display: flex;
     text-align: justify;
     margin-left: 150px;
     margin-right: 150px;  
@@ -23,6 +26,7 @@ body{
 }
 
 .p2{
+    display: flex;
     text-align: justify;
     margin-left: 150px;
     margin-right: 150px;  
@@ -31,6 +35,7 @@ body{
 }
 
 .lista1{
+    display: flex;
     color: white;
     text-align: justify;
     margin-left: 150px;
@@ -40,7 +45,7 @@ body{
 }
 
 .fc {
-
+    display: flex;
     border: 2px solid white;     
     font-size: 20px;
     color: white; 
