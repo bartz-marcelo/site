@@ -1,8 +1,13 @@
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
     padding: 0;
-    font-family: "Manrope";
+    min-height: 100vh;
+    font-family: "Manrope", system-ui, sans-serif;
+    line-height: 1.6;
     background-color: black;
     color: white;
     overflow-x: hidden;
@@ -10,34 +15,52 @@ body {
     flex-direction: column;
 }
 
+main {
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+}
 
 #logo {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    width: min(80%, 700px);
+    height: auto;
     margin: 0 auto;
 }
 
-
 .titulo {
-    font-size: 1.5em;
     text-align: left;
 }
 
+h1.titulo {
+    font-size: clamp(1.6em, 4vw, 2.2em);
+    line-height: 1.2;
+}
+
+h2.titulo {
+    font-size: 1.5em;
+}
 
 .paragrafo {
     font-size: 1em;
-    margin: 0 10%;
+    width: min(90%, 70ch);
+    margin: 0 auto 1.5em auto;
     text-align: left;
 }
 
+.marca {
+    font-size: 1.4em;
+}
+
+.titulo.centralizado {
+    text-align: center;
+}
 
 #lista {
     margin: 2em 0;
 }
-
 
 .fc {
     display: flex;
@@ -45,83 +68,135 @@ body {
     justify-content: center;
     align-items: center;
     border: white solid 1px;
-    padding: 0 1%;
-    width: 35%;
+    padding: 1em 1.5em;
+    width: min(90%, 480px);
     border-radius: 5px;
     background-color: #333;
     color: white;
-    margin: 1em auto 1em auto;
+    margin: 2.5em auto 2em auto;
 }
 
+.fc form {
+    width: 100%;
+}
 
 .fc .titulo {
-    font-size: 1.5em;
     margin: 0.5em 0 1em 0;
     text-align: center;
 }
 
-
-.fc input {
-    padding: 0.5em 0;
-    border: none;
+.fc input,
+.fc textarea {
+    padding: 0.6em 0.8em;
+    border: 2px solid transparent;
     border-radius: 5px;
     width: 100%;
     margin-bottom: 1em;
+    font-family: inherit;
+    font-size: 1em;
 }
-
 
 .fc textarea {
-    padding: 0.5em 0;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    resize: none;
+    resize: vertical;
+    min-height: 6em;
 }
 
+.fc input:focus,
+.fc textarea:focus,
+.fc button:focus-visible {
+    outline: none;
+    border-color: #ffc107;
+}
 
 .fc label {
-    display: inline-block;
-    margin: 0 auto 0.5em auto;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    padding-top: 0.5em;
+    display: block;
+    margin: 0 0 0.4em 0;
+    text-align: left;
 }
-
 
 .fc button {
     margin: 10px 0;
-    padding: 10px;
+    padding: 12px;
     border: white solid 1px;
     border-radius: 5px;
     background-color: #333;
     color: white;
+    font-family: inherit;
+    font-size: 1em;
     cursor: pointer;
     width: 100%;
+    transition: background-color 0.2s, color 0.2s;
 }
 
+.fc button {
+    background-color: #25d366;
+    border-color: #25d366;
+    color: black;
+    font-weight: 600;
+}
 
 .fc button:hover {
+    background-color: #1ebe5b;
+    border-color: #1ebe5b;
+    color: black;
+}
+
+.contatos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8em;
+    margin: 2em 0 1.2em 0;
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 20px;
+    border: white solid 1px;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.botao:hover {
     background-color: white;
     color: black;
 }
 
+.botao-ligar {
+    margin-left: auto;
+}
+
+.botao-whatsapp {
+    background-color: #25d366;
+    border-color: #25d366;
+    color: black;
+}
+
+#status-form {
+    text-align: center;
+    font-size: 0.85em;
+    margin: 0;
+}
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #333;
     color: white;
     padding: 1em 0;
     margin-top: auto;
 }
 
+footer p {
+    margin: 0.4em 0;
+}
+
+footer .email {
+    color: white;
+}
 
 #direitos {
     font-size: 0.8em;
-    align-items: center;
-    justify-content: center;
     text-align: center;
 }
